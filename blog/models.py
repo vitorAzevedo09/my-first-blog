@@ -1,4 +1,3 @@
-from typing import override
 from django.db import models
 
 # Create your models here.
@@ -19,6 +18,5 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
-    @override
     def __str__(self):
         return str(self.title)
